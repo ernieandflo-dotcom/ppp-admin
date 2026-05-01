@@ -303,7 +303,7 @@ const PROJECT_DATA = [
             id: 't-geo-pub-all',
             name: 'Publication sur le site (GitHub)',
             dep: ['t-geo-revision'],
-            note: 'Dépend de l'approbation des brouillons',
+            note: 'Dépend de l\'approbation des brouillons',
             status: 'waiting',
           },
           {
@@ -377,7 +377,7 @@ const PROJECT_DATA = [
           },
           {
             id: 't-ai-perplexity',
-            name: 'Vérifier l'indexation sur Perplexity, ChatGPT, Bing Copilot',
+            name: 'Vérifier l\'indexation sur Perplexity, ChatGPT, Bing Copilot',
             status: 'todo',
           },
         ],
