@@ -140,7 +140,7 @@ function renderBoard() {
 
     html += `
       <div class="phase">
-        <div class="phase-header open" onclick="togglePhase(this)">
+        <div class="phase-header" onclick="togglePhase(this)">
           <div class="phase-accent" style="background:${phase.color}"></div>
           <span class="phase-title">${phase.name}</span>
           <div class="phase-progress">
@@ -153,7 +153,7 @@ function renderBoard() {
             <path d="M6 4l4 4-4 4"/>
           </svg>
         </div>
-        <div class="phase-body open">`;
+        <div class="phase-body">`;
 
     phase.groups.forEach(group => {
       const visibleGroupTasks = group.tasks.filter(t => taskMatchesFilter(t.id, t.status));
@@ -161,13 +161,13 @@ function renderBoard() {
 
       html += `
           <div class="group">
-            <div class="group-header open" onclick="toggleGroup(this)">
+            <div class="group-header" onclick="toggleGroup(this)">
               <svg class="group-chevron" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.8">
                 <path d="M6 4l4 4-4 4"/>
               </svg>
               <span class="group-title">${group.name}</span>
             </div>
-            <div class="group-body open">`;
+            <div class="group-body">`;
 
       visibleGroupTasks.forEach(task => {
         let depHtml = '';
